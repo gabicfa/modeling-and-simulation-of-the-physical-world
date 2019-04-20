@@ -7,7 +7,7 @@ females sharks were protected from threats and could thus procreate,
 how it would have affected the population of scallops in the last
 30 years?
 
-##Population Model
+## Population Model
 
 The model used to answer this question:
 
