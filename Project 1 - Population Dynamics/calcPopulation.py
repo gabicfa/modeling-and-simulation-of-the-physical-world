@@ -7,7 +7,7 @@ Created on Mon Mar 30 21:47:32 2015
 
 import matplotlib.pyplot as plt
 from pylab import *
-from Funcoes3 import *
+from funcs import *
 
 def calcPopulation (gamaT, T, P, betaR, Tc, V, alfaV, Rc, tempo):
     
@@ -20,13 +20,13 @@ def calcPopulation (gamaT, T, P, betaR, Tc, V, alfaV, Rc, tempo):
     f=1.9
 
     for i in range(1,tempo):
-        DT = CalculaDeltaT(gamaT, Ti[i-1], f, P)
+        DT = CalcDeltaT(gamaT, Ti[i-1], f, P)
         Ti[i] = Ti[i-1] + DT
          
-        DR = CalculaDeltaR(Ri[i-1], betaR, Ti[i-1], Tc)
+        DR = CalcDeltaR(Ri[i-1], betaR, Ti[i-1], Tc)
         Ri[i] = Ri[i-1] + DR
         
-        DV = CalculaDeltaV(Vi[i-1], alfaV, Ri[i-1], Rc)
+        DV = CalcDeltaV(Vi[i-1], alfaV, Ri[i-1], Rc)
         Vi[i]= Vi[i-1] + DV
         
     print(Ti[tempo-1])
@@ -62,17 +62,17 @@ def calcPopulation (gamaT, T, P, betaR, Tc, V, alfaV, Rc, tempo):
     
 gamaT=0.06
 
-T= 10000000 #
-R= 20000000 #
+T= 10000000 
+R= 20000000 
 P= 700000
 
 betaR=0.08
 Tc=12000000
 
-V= 80000000 #
+V= 80000000 
 alfaV=0.1
 Rc=23000000
-tempo= 30 #
+tempo= 30 
 
     
 calcPopulation (gamaT, T, P, betaR, Tc, V, alfaV, Rc, tempo)
