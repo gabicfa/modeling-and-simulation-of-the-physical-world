@@ -1,4 +1,4 @@
-# ModelingAndSimulationOfThePhysicalWord
+# Modeling And Simulation Of The Physical Word
 
 This is a repository for the projects for the Modeling and Simulation of the Physical Word class, taught at 1st semester of 
 Computer Engineering at Insper (Feb-Jun 2015). This course provides an introduction to mathematical modeling and computer simulation of physical
